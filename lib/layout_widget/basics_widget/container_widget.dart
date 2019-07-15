@@ -11,10 +11,10 @@ class MyApp extends StatelessWidget{
   Widget build(BuildContext context) {
     // TODO: implement build
     return new MaterialApp(
-      title: 'Flutter layout demo',
+      title: 'Flutter basics widget:Container',
       home: Scaffold(
         appBar: AppBar(
-          title: new Text('Flutter layout demo'),
+          title: new Text('Flutter basics widget:Container'),
         ),
 
         body: Center(
