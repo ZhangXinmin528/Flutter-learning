@@ -6,7 +6,7 @@ void main() {
 
 class MyApp extends StatelessWidget {
   static const String _title =
-      'Material components widget : BottomNavigationBar';
+      'Material Design widget : BottomNavigationBar';
 
   @override
   Widget build(BuildContext context) {
