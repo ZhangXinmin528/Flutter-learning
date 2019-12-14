@@ -15,7 +15,7 @@ class MyApp extends StatelessWidget {
           title: Text('Flutter basics widget:Image'),
         ),
         body: Center(
-          child: _buildAssetImage(),
+          child: _obtainImageFromNet(),
         ),
       ),
     );
@@ -24,5 +24,10 @@ class MyApp extends StatelessWidget {
   //Get a image from an AssetBundle using a key.
   Widget _buildAssetImage() {
     return Image.asset('images/pic1.jpg');
+  }
+
+  Widget _obtainImageFromNet() {
+    return Image.network(
+        'https://flutter.github.io/assets-for-api-docs/assets/widgets/owl.jpg');
   }
 }
