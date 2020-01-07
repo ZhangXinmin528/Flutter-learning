@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: _title,
       home: MyStatefulWidget(),
+      showPerformanceOverlay: true,
     );
   }
 }
@@ -47,17 +48,14 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: () {
-
           setState(() {
             _count++;
           });
-
         },
         tooltip: 'Increatement Counter',
         child: Icon(Icons.add),
       ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
-
     );
   }
 }

@@ -20,6 +20,10 @@ dependencies:
   flutter:
     sdk: flutter
 
+  #国际化
+  flutter_localizations:
+    sdk: flutter
+
   #English words
   english_words: ^3.1.0
 
@@ -53,6 +57,10 @@ dependencies:
 
   #视频播放
   video_player: ^0.10.5
+
+  # 使用Intl国际化
+  intl:
+  intl_translation:
 
 dev_dependencies:
   flutter_test:
