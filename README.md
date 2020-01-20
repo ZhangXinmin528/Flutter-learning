@@ -1,16 +1,24 @@
-# flutterdemo
+#Flutter-learning
 
-A new Flutter application.
+##概述
 
-## Getting Started
+该仓库主要收集Flutter学习相关代码，方便开发者可以快速的学习Flutter,提高水平。主要包括：
 
-This project is a starting point for a Flutter application.
+>basic_sample：
 
-A few resources to get you started if this is your first Flutter project:
+>>guide：
+Flutter[官方教程](https://flutter.cn/docs/cookbook)的demo.该板块主要包含Animation（动画）,Design（材料设计）,Forms（表单）,Gestures（手势）,Images（图片）,Lists（列表），Navigation（导航）,Networking（网络）,Persistence（持久化）,Plugins（插件）,Localizations（国际化）等等；
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+>>widgets:
+[Flutter核心Widget目录](https://flutter.cn/docs/development/ui/widgets)的demo.
 
-For help getting started with Flutter, view our 
-[online documentation](https://flutter.dev/docs), which offers tutorials, 
-samples, guidance on mobile development, and a full API reference.
+
+
+
+
+
+
+
+
+
+
