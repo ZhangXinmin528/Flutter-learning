@@ -13,9 +13,18 @@ Flutter[官方教程](https://flutter.cn/docs/cookbook)的demo.该板块主要�
 [Flutter核心Widget目录](https://flutter.cn/docs/development/ui/widgets)的demo.该板块包含animation_widget（动画控件）,ansy_widget（异步控件）,basics_widget（基本控件）,input_widget（输入控件）,layout_widget（布局控件）,material_widget（材料设计）scrolling_widget（滚动布局）,text_widget（文本控件）.
 
 
+### bloc_sample：
 
+[Tutorial](https://bloclibrary.dev/#/flutterinfinitelisttutorial)
 
+* **flutter_counter**:
+A Counter in Flutter using the Bloc library.
 
+* **flutter_timer**:
+A timer application using the bloc library. 
+
+* **flutter_infinite_list**:
+An app which fetches data over the network and loads it as a user scrolls using Flutter and the bloc library.
 
 
 
