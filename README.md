@@ -18,7 +18,7 @@ Flutter[官方教程](https://flutter.cn/docs/cookbook)的demo.该板块主要�
 [Tutorial](https://bloclibrary.dev/#/flutterinfinitelisttutorial)
 
 * **flutter_counter**:
-A Counter in Flutter using the Bloc library.
+A Counter in Flutter using the bloc library.
 
 * **flutter_timer**:
 A timer application using the bloc library. 
