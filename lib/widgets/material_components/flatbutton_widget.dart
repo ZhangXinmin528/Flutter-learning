@@ -1,9 +1,11 @@
 import 'package:flutter/material.dart';
 
+///废弃
 void main() {
   runApp(MyApp());
 }
 
+@deprecated
 class MyApp extends StatelessWidget {
   static const String _title = 'MD component widget : FlatButton';
 

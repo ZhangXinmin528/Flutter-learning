@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+///卡片控件使用示例
 void main() {
   runApp(MyApp());
 }
@@ -24,6 +25,9 @@ class MyStatelessWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
+      appBar: AppBar(
+        title: Text('Card widget example'),
+      ),
       body: Center(
         child: Card(
           child: InkWell(

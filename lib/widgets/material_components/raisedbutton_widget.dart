@@ -22,6 +22,7 @@ class MyApp extends StatelessWidget {
   }
 }
 
+@deprecated
 class MyStatelessWidget extends StatelessWidget {
   MyStatelessWidget({Key key}) : super(key: key);
 

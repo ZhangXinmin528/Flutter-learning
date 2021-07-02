@@ -6,6 +6,7 @@
 
 import 'package:flutter/material.dart';
 
+///悬浮按钮使用示例
 void main() => runApp(MyApp());
 
 /// This Widget is the main application widget.

@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 
+///底部导航栏的使用
 void main() {
   runApp(MyApp());
 }
 
 class MyApp extends StatelessWidget {
-  static const String _title =
-      'Material Design widget : BottomNavigationBar';
+  static const String _title = 'Material Design widget : BottomNavigationBar';
 
   @override
   Widget build(BuildContext context) {

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+///下拉菜单使用示例
 void main() {
   runApp(MyApp());
 }
@@ -23,7 +24,6 @@ class MyApp extends StatelessWidget {
 }
 
 class MyStatefulWidget extends StatefulWidget {
-
   MyStatefulWidget({Key key}) : super(key: key);
 
   @override
@@ -34,7 +34,6 @@ class MyStatefulWidget extends StatefulWidget {
 }
 
 class _MyStatefulWidgetState extends State<MyStatefulWidget> {
-
   String dropdownValue = 'One';
 
   @override
@@ -42,23 +41,24 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
     // TODO: implement build
     return Scaffold(
       body: Center(
-          child: DropdownButton<String>(
-              value: dropdownValue,
-
-              items: <String>['One', 'Two', 'Three', 'Four']
-                  .map<DropdownMenuItem<String>>((String value) {
-                return DropdownMenuItem<String>(
-                  value: value,
-                  child: Text(value),
-                );
-              })
-                  .toList(),
-              onChanged: (String newValue) {
-                setState(() {
-                  dropdownValue = newValue;
-                });
-              })),
+        child: DropdownButton<String>(
+          value: dropdownValue,
+          items: <String>['One', 'Two', 'Three', 'Four']
+              .map<DropdownMenuItem<String>>((String value) {
+            return DropdownMenuItem<String>(
+              value: value,
+              child: Text(value),
+            );
+          }).toList(),
+          onChanged: (String newValue) {
+            setState(
+              () {
+                dropdownValue = newValue;
+              },
+            );
+          },
+        ),
+      ),
     );
   }
-
 }
