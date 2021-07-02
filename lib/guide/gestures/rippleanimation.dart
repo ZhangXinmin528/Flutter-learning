@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//添加点按涟漪效果 (Material Design)
+///添加点按涟漪效果 (Material Design)
 void main() {
   runApp(MyApp());
 }

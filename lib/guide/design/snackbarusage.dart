@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//显示 snackbars
+///SnackBar使用示例
 void main() {
   runApp(MyApp());
 }

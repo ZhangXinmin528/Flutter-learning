@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
+///嵌套滑动使用示例
 void main() {
   runApp(MyApp());
 }
@@ -32,6 +33,7 @@ class MyStatefulWidget extends StatefulWidget {
 
 class _MyStatefulWidget extends State<MyStatefulWidget>
     with SingleTickerProviderStateMixin {
+
   var _tabs = <String>['Car', 'Transit', 'Bike'];
 
   @override
@@ -44,7 +46,7 @@ class _MyStatefulWidget extends State<MyStatefulWidget>
           return <Widget>[
             SliverOverlapAbsorber(
               handle: NestedScrollView.sliverOverlapAbsorberHandleFor(context),
-              child: SliverAppBar(
+              sliver: SliverAppBar(
                 title: const Text(
                   'Vehicles',
                 ),

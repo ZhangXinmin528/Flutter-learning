@@ -1,7 +1,7 @@
 import 'package:english_words/english_words.dart';
 import 'package:flutter/material.dart';
 
-//Flutter 应用初体验
+///Flutter 应用初体验
 void main() => runApp(new MyApp());
 
 class MyApp extends StatelessWidget {

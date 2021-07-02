@@ -17,7 +17,8 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text(title),
         ),
-        body: _buildHolderFromDisk(),
+        body: _buildHolderFromCache(),
+        // body: _buildHolderFromDisk(),
       ),
     );
   }

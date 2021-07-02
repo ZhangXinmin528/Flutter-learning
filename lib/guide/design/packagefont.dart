@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//使用字体
+///使用字体
 void main() {
   runApp(MyApp());
 }
@@ -37,7 +37,7 @@ class MyHomePage extends StatelessWidget {
           'Example for using the Raleway font~',
           textAlign: TextAlign.center,
           style: TextStyle(
-            fontFamily: 'Pacifico',
+            fontFamily: 'Raleway',
             fontSize: 28.0,
             fontWeight: FontWeight.w400,
             color: Colors.blue,

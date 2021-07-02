@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//实现「滑动清除」效果
+///实现「滑动清除」效果
 void main() {
   runApp(MyApp());
 }

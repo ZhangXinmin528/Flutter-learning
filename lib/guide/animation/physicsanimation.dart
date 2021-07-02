@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/physics.dart';
 
-//Widget 的物理模拟动画效果
+///Widget 的物理模拟动画效果
 void main() {
   runApp(MaterialApp(
     home: PhysicsCardDemo(),

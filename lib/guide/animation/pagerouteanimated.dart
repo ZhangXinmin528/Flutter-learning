@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//为页面切换加入动画效果
+///为页面切换加入动画效果
 void main() {
   runApp(MaterialApp(
     home: Page1(),
@@ -31,7 +31,7 @@ class Page1 extends StatelessWidget {
         transitionsBuilder: (context, animation, secondaryAnimation, child) {
           var begin = Offset(0.0, 1.0);
           var end = Offset.zero;
-          var curve = Curves.easeOut;
+          var curve = Curves.linear;
           var tween =
               Tween(begin: begin, end: end).chain(CurveTween(curve: curve));
           return SlideTransition(

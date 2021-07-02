@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+///文本输入框校验内容
 void main() {
   runApp(MyApp());
 }
@@ -32,6 +33,7 @@ class MyCustomForm extends StatefulWidget {
 
 class _MyCustomFormState extends State<MyCustomForm> {
   final _formKey = GlobalKey<FormState>();
+  String _value;
 
   @override
   Widget build(BuildContext context) {
@@ -46,6 +48,7 @@ class _MyCustomFormState extends State<MyCustomForm> {
                 if (value.isEmpty) {
                   return 'Please enter something';
                 } else {
+                  _value = value;
                   return null;
                 }
               },
@@ -56,7 +59,7 @@ class _MyCustomFormState extends State<MyCustomForm> {
                 onPressed: () {
                   if (_formKey.currentState.validate()) {
                     Scaffold.of(context).showSnackBar(SnackBar(
-                      content: Text('Processing data~'),
+                      content: Text("input value:" + _value),
                       action: SnackBarAction(label: 'Ok', onPressed: () {}),
                     ));
                   }

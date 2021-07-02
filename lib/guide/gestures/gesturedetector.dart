@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//捕获和处理点击动作
+///手势处理
 void main() {
   runApp(MyApp());
 }

@@ -15,22 +15,22 @@ class MyApp extends StatelessWidget {
       title: appTitle,
       //定义全局Theme
       theme: ThemeData(
-        brightness: Brightness.dark,
+        brightness: Brightness.light,
         primaryColor: Colors.lightBlue[800],
         accentColor: Colors.cyan[600],
         // Define the default font family.
         fontFamily: 'Raleway',
 
         textTheme: TextTheme(
-          headline: TextStyle(
+          headline1: TextStyle(
             fontSize: 72.0,
             fontWeight: FontWeight.bold,
           ),
-          title: TextStyle(
+          headline2: TextStyle(
             fontSize: 28.0,
             fontStyle: FontStyle.italic,
           ),
-          body1: TextStyle(fontSize: 14.0, fontFamily: 'Pacifico'),
+          headline3: TextStyle(fontSize: 14.0, fontFamily: 'Pacifico'),
         ),
       ),
       home: MyHomePage(
@@ -57,7 +57,7 @@ class MyHomePage extends StatelessWidget {
           color: Theme.of(context).accentColor,
           child: Text(
             'Text with a background color~',
-            style: Theme.of(context).textTheme.title,
+            style: Theme.of(context).textTheme.headline2,
           ),
         ),
       ),
