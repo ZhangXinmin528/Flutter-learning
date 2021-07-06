@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-//存储键值对数据
+///存储键值对数据
 void main() {
   runApp(MyApp());
 }

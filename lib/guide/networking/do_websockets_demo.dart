@@ -2,7 +2,7 @@ import 'package:web_socket_channel/io.dart';
 import 'package:flutter/material.dart';
 import 'package:web_socket_channel/web_socket_channel.dart';
 
-//发起 WebSockets 请求
+///发起 WebSockets 请求
 void main() {
   runApp(MyApp());
 }

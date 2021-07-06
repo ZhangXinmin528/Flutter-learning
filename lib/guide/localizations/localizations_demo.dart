@@ -84,7 +84,7 @@ class Demo extends StatelessWidget {
         const Locale('es', ''),
 //        const Locale('zh', ''),
       ],
-      locale: Locale('es', ''),
+      locale: Locale('en', ''),
       home: DemoApp(),
     );
   }

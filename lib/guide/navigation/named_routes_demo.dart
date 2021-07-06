@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//导航到对应名称的 routes 里
+///导航到对应名称的 routes 里
 void main() {
   runApp(MyApp());
 }

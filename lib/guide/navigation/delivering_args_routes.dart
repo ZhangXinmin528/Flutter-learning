@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//给特定的 route 传参
+///给特定的 route 传参
 void main() {
   runApp(MyApp());
 }

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-//传递数据到新页面
+///传递数据到新页面
 void main() {
   runApp(MyApp());
 }

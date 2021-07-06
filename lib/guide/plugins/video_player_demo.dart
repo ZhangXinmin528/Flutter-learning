@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:video_player/video_player.dart';
 
-//视频的播放和暂停
+///视频的播放和暂停
 void main() {
   runApp(VideoPlayerApp());
 }

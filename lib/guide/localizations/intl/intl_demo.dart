@@ -1,37 +1,48 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:flutterdemo/l10n/intl_localizations.dart';
 
-//使用Intl进行国际化
-//TODO:存在问题找不到Title
+///
 void main() {
-  runApp(IntlDemoApp());
+  runApp(MyApp());
 }
 
-class IntlDemoApp extends StatelessWidget {
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
     return MaterialApp(
-      onGenerateTitle: (BuildContext context) {
-        return IntlDemoLocalizations.of(context).title;
-      },
+      title: 'Localizations Sample App',
       localizationsDelegates: [
-        const IntlDemoLocalizationsDelegate(),
+        AppLocalizations.delegate, // Add this line
         GlobalMaterialLocalizations.delegate,
         GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
       ],
       supportedLocales: [
         const Locale('en', ''),
         const Locale('es', ''),
+        const Locale('zh', ''),
       ],
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text(IntlDemoLocalizations.of(context).title),
-        ),
-        body: Center(
-          child: Text(IntlDemoLocalizations.of(context).title),
-        ),
+      // locale: Locale('en',''),//可以指定使用的语言
+      theme: ThemeData(primarySwatch: Colors.blue),
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return _MyHomePageState();
+  }
+}
+
+class _MyHomePageState extends State<MyHomePage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(AppLocalizations.of(context).helloWorld),
       ),
     );
   }

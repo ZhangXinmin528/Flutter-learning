@@ -3,7 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-//获取网络数据
+///获取网络数据
 void main() {
   runApp(MyApp());
 }
@@ -74,8 +74,8 @@ class Post {
 }
 
 Future<Post> fetchPost() async {
-  final response =
-      await http.get('https://jsonplaceholder.typicode.com/posts/1');
+  final uri = Uri.parse("https://jsonplaceholder.typicode.com/posts/1");
+  final response = await http.get(uri);
 
   if (response.statusCode == 200) {
     return Post.fromJson(json.decode(response.body));

@@ -5,7 +5,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
-//在后台处理 JSON 数据解析
+///在后台处理 JSON 数据解析
 void main() {
   runApp(MyApp());
 }
@@ -94,8 +94,10 @@ class Photo {
 
 //发起网络请求
 Future<List<Photo>> fetchPhotos(http.Client client) async {
+  final uri = Uri.parse("https://jsonplaceholder.typicode.com/photos");
+
   final response =
-      await client.get("https://jsonplaceholder.typicode.com/photos");
+      await client.get(uri);
   //Flutter 提供的 compute() 方法将解析和转换的工作移交到一个后台 isolate 中
   return compute(parsePhotos, response.body);
 }
