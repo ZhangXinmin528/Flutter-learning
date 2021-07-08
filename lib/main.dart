@@ -9,6 +9,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(title: 'Welcome to Flutter', home: RandomWords());
   }
+
 }
 
 class RandomWords extends StatefulWidget {
